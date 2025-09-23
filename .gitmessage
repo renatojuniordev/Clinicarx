@@ -1,0 +1,10 @@
+<tipo>(<escopo opcional>): <resumo curto e no presente>
+
+<corpo opcional explicando o porquê e detalhes técnicos>
+
+-   Pode usar bullets.
+-   Foque no motivo/impacto, não só no “o que”.
+
+Rodapé (opcional):
+Closes #ID-DA-ISSUE
+BREAKING CHANGE: descreva a quebra de compatibilidade
