@@ -1,0 +1,18 @@
+# SO / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# build / dependências
+node_modules/
+dist/
+build/
+
+# CSS gerado do SCSS (opção A: ignorar)
+# assets/css/*.css
+# assets/css/*.map
+
+# .env e logs
+.env
+*.log
