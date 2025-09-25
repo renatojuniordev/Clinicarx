@@ -1,7 +1,12 @@
-@use 'reset';
+@use 'variables' as v;
+
+// Estilos de layout e tipografia
 @use 'fonts';
-@use 'variables';
-@use 'mixins';
+@use 'typography';
+
+@use 'mixins' as m;
+@use 'reset';
+
+// Componentes e Sessões
 @use 'components';
 @use 'sections';
-@use 'typography';

@@ -48,48 +48,56 @@ $breakpoints: (
 
 // Tipografia
 @mixin desktop-display-large() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 5.6rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
 }
 
 @mixin desktop-display() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 4.8rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
 }
 
 @mixin desktop-h1() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 3.6rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
 }
 
 @mixin desktop-h2() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 3.2rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
 }
 
 @mixin desktop-h3() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 2.8rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
 }
 
 @mixin desktop-h4() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 2.4rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
 }
 
 @mixin desktop-h5() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 2rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
 }
 
 @mixin desktop-h6() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 1.8rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
@@ -97,48 +105,56 @@ $breakpoints: (
 
 // tablet
 @mixin tablet-display-large() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 4.8rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
 }
 
 @mixin tablet-display() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 4rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
 }
 
 @mixin tablet-h1() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 3.2rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
 }
 
 @mixin tablet-h2() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 2.8rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
 }
 
 @mixin tablet-h3() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 2.4rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
 }
 
 @mixin tablet-h4() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 2rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
 }
 
 @mixin tablet-h5() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 1.8rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
 }
 
 @mixin tablet-h6() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 1.6rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
@@ -146,53 +162,62 @@ $breakpoints: (
 
 // mobile
 @mixin mobile-display-large() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 4rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
 }
 
 @mixin mobile-display() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 3.2rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
 }
 
 @mixin mobile-h1() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 2.8rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
 }
 
 @mixin mobile-h2() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 2.4rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
 }
 
 @mixin mobile-h3() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 2rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
 }
 
 @mixin mobile-h4() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 1.8rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
 }
 
 @mixin mobile-h5() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 1.6rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
 }
 
 @mixin mobile-h6() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 1.4rem;
 	font-weight: 700;
 	line-height: v.$line-height-heading;
 }
 
 @mixin mobile-p() {
+	font-family: v.$font-family, sans-serif;
 	font-size: 1.4rem;
 }

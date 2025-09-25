@@ -1,3 +1,4 @@
+@use 'mixins' as m;
 @use 'variables' as v;
 
 * {
@@ -43,4 +44,14 @@ button {
 
 ul {
 	list-style: none;
+}
+
+p {
+	line-height: v.$line-height-body;
+	font-weight: 400;
+
+	// Responsive
+	@include m.responsive(tablet-landscape) {
+		@include m.mobile-p;
+	}
 }
