@@ -1,0 +1,18 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+// Grid Container
+.container {
+	width: 100%;
+	margin: 0 auto;
+	border: 1px solid red;
+
+	// Responsividade
+	@include m.resolucao-minima(1366px) {
+		max-width: 1280px;
+	}
+
+	@include m.responsive(laptop-hd) {
+		max-width: 90%;
+	}
+}

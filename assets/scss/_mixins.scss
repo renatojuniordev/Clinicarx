@@ -26,8 +26,8 @@ $breakpoints: (
 	tablet-landscape: 1200px,
 	tablet-portrait: 1024px,
 	mobile-landscape: 880px,
-	mobile-portrait: 767px,
-	mobile-small: 480px,
+	mobile-portrait: 768px,
+	mobile-small: 430px,
 );
 
 @mixin responsive($breakpoint-name) {
@@ -42,6 +42,12 @@ $breakpoints: (
 
 @mixin resolucao($largura) {
 	@media (max-width: $largura) {
+		@content;
+	}
+}
+
+@mixin resolucao-minima($largura-minima) {
+	@media (min-width: $largura-minima) {
 		@content;
 	}
 }
