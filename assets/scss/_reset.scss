@@ -1,0 +1,46 @@
+@use 'variables' as v;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	font-family: v.$font-family;
+}
+
+html {
+	font-size: v.$html-font-size;
+	scroll-behavior: smooth;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-size: v.$font-size;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+button {
+	all: unset;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+ul {
+	list-style: none;
+}

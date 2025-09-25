@@ -1,0 +1,198 @@
+@use 'variables' as v;
+
+// Flex
+@mixin flex($direction, $justify, $align, $gap) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+	gap: $gap;
+}
+
+// Texto pequeno
+@mixin texto14 {
+	font-size: 1.4rem;
+	font-weight: 400;
+	// letter-spacing: -0.05rem;
+	line-height: 150%;
+}
+
+// Breakpoint prontos para responsividade
+$breakpoints: (
+	wide: 2400px,
+	desktop: 1400px,
+	laptop: 1366px,
+	laptop-hd: 1280px,
+	tablet-landscape: 1200px,
+	tablet-portrait: 1024px,
+	mobile-landscape: 880px,
+	mobile-portrait: 767px,
+	mobile-small: 480px,
+);
+
+@mixin responsive($breakpoint-name) {
+	@if map-has-key($breakpoints, $breakpoint-name) {
+		@media (max-width: map-get($breakpoints, $breakpoint-name)) {
+			@content;
+		}
+	} @else {
+		@warn "Este breakpoint que foi definido não existe!";
+	}
+}
+
+@mixin resolucao($largura) {
+	@media (max-width: $largura) {
+		@content;
+	}
+}
+
+// Tipografia
+@mixin desktop-display-large() {
+	font-size: 5.6rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+@mixin desktop-display() {
+	font-size: 4.8rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+@mixin desktop-h1() {
+	font-size: 3.6rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+@mixin desktop-h2() {
+	font-size: 3.2rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+@mixin desktop-h3() {
+	font-size: 2.8rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+@mixin desktop-h4() {
+	font-size: 2.4rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+@mixin desktop-h5() {
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+@mixin desktop-h6() {
+	font-size: 1.8rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+// tablet
+@mixin tablet-display-large() {
+	font-size: 4.8rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+@mixin tablet-display() {
+	font-size: 4rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+@mixin tablet-h1() {
+	font-size: 3.2rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+@mixin tablet-h2() {
+	font-size: 2.8rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+@mixin tablet-h3() {
+	font-size: 2.4rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+@mixin tablet-h4() {
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+@mixin tablet-h5() {
+	font-size: 1.8rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+@mixin tablet-h6() {
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+// mobile
+@mixin mobile-display-large() {
+	font-size: 4rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+@mixin mobile-display() {
+	font-size: 3.2rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+@mixin mobile-h1() {
+	font-size: 2.8rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+@mixin mobile-h2() {
+	font-size: 2.4rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+@mixin mobile-h3() {
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+@mixin mobile-h4() {
+	font-size: 1.8rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+@mixin mobile-h5() {
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+@mixin mobile-h6() {
+	font-size: 1.4rem;
+	font-weight: 700;
+	line-height: v.$line-height-heading;
+}
+
+@mixin mobile-p() {
+	font-size: 1.4rem;
+}

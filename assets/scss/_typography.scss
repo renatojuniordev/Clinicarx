@@ -1,0 +1,106 @@
+@use 'mixins' as m;
+@use 'variables' as v;
+
+h1.display-large {
+	@include m.desktop-display-large;
+
+	// Responsive
+	@include m.responsive(tablet-landscape) {
+		@include m.tablet-display-large;
+	}
+
+	@include m.responsive(mobile-landscape) {
+		@include m.mobile-display-large;
+	}
+}
+
+h1.display {
+	@include m.desktop-display;
+
+	// Responsive
+	@include m.responsive(tablet-landscape) {
+		@include m.tablet-display-large;
+	}
+
+	@include m.responsive(mobile-landscape) {
+		@include m.mobile-display-large;
+	}
+}
+
+h1 {
+	@include m.desktop-h1;
+
+	// Responsive
+	@include m.responsive(tablet-landscape) {
+		@include m.tablet-h1;
+	}
+
+	@include m.responsive(mobile-landscape) {
+		@include m.mobile-h1;
+	}
+}
+
+h2 {
+	@include m.desktop-h2;
+
+	// Responsive
+	@include m.responsive(tablet-landscape) {
+		@include m.tablet-h2;
+	}
+
+	@include m.responsive(mobile-landscape) {
+		@include m.mobile-h2;
+	}
+}
+
+h3 {
+	@include m.desktop-h3;
+
+	// Responsive
+	@include m.responsive(tablet-landscape) {
+		@include m.tablet-h3;
+	}
+
+	@include m.responsive(mobile-landscape) {
+		@include m.mobile-h3;
+	}
+}
+
+h4 {
+	@include m.desktop-h4;
+
+	// Responsive
+	@include m.responsive(tablet-landscape) {
+		@include m.tablet-h4;
+	}
+
+	@include m.responsive(mobile-landscape) {
+		@include m.mobile-h4;
+	}
+}
+
+h5 {
+	@include m.desktop-h5;
+
+	// Responsive
+	@include m.responsive(tablet-landscape) {
+		@include m.tablet-h5;
+	}
+
+	@include m.responsive(mobile-landscape) {
+		@include m.mobile-h5;
+	}
+}
+
+h6 {
+	@include m.desktop-h6;
+
+	// Responsive
+	@include m.responsive(tablet-landscape) {
+		@include m.tablet-h6;
+	}
+
+	@include m.responsive(mobile-landscape) {
+		@include m.mobile-h6;
+	}
+}
