@@ -8,6 +8,7 @@
 	border: none;
 	outline: none;
 	font-family: v.$font-family;
+	letter-spacing: v.$letter-spacing;
 }
 
 html {
@@ -19,6 +20,7 @@ html {
 
 body {
 	font-size: v.$font-size;
+	color: v.$secondary-color;
 }
 
 html,
@@ -54,4 +56,32 @@ p {
 	@include m.responsive(tablet-landscape) {
 		@include m.mobile-p;
 	}
+}
+
+// Quando seleciona um texto
+::selection {
+	background-color: v.$primary-color;
+	color: v.$white;
+}
+
+// Barra de scroll
+/* Largura da barra */
+body::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* Cor de fundo */
+body::-webkit-scrollbar-track {
+	background: #f7f8f9;
+}
+
+/* Cor do controle deslizante */
+body::-webkit-scrollbar-thumb {
+	background: #2a3342;
+	transition: 0.7s;
+}
+
+/* Passa o mouse */
+body::-webkit-scrollbar-thumb:hover {
+	background: #2a3342;
 }

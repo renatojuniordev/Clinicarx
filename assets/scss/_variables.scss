@@ -1,8 +1,11 @@
 // Colors
-$primary-color: #adff05;
-$secondary-color: #ffffff;
-$bg-color-body: #172129; // Cor que vai ser o fundo da página
+$primary-color: #009ead;
+$secondary-color: #2a3342;
 $white: #ffffff;
+$texto-body: #556987;
+$texto-body-opacidade: rgba(85, 105, 135, 0.8);
+$button-hover: #007480;
+$transition: all 0.3s ease;
 
 // Escala de cinza
 $gray-600: #33303e;
@@ -17,6 +20,7 @@ $font-family: 'Poppins';
 $font-size: 1.6rem; // Tamanho da fonte padrão
 $line-height-heading: 110%; // Altura da linha padrão para títulos
 $line-height-body: 150%; // Altura da linha padrão para o corpo do texto
+$letter-spacing: 0;
 
 // HTML
 $html-font-size: 62.5%; // Tamanho da fonte padrão para o HTML
