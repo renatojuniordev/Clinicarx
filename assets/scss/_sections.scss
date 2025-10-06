@@ -58,6 +58,7 @@
 		// Hamburguer menu
 		.hamburger {
 			cursor: pointer;
+			margin-bottom: -16px;
 
 			input {
 				display: none;
@@ -101,6 +102,83 @@
 			// Não aparecer se a tela for maior que 1025px
 			@include m.resolucao-minima(1025px) {
 				display: none;
+			}
+		}
+	}
+}
+
+// Hero
+.hero {
+	background: linear-gradient(97deg, #f5feff 74.39%, #fff 95.51%);
+	@include m.flex(row, flex-start, center, 0);
+	min-height: 600px;
+
+	.container {
+		padding: 52px 0;
+		position: relative;
+
+		.box-headline {
+			width: 100%;
+			max-width: 519px;
+			@include m.flex(column, flex-start, flex-start, 16px);
+
+			.user-avatars {
+				padding: 4px;
+				@include m.flex(row, flex-start, center, 12px);
+
+				span {
+					color: v.$secondary-color;
+					font-size: 1.4rem;
+					font-weight: 500;
+				}
+			}
+
+			.headline {
+				@include m.flex(column, flex-start, flex-start, 8px);
+
+				h1.display-large {
+					font-size: 6rem;
+					line-height: 105%;
+					font-weight: 800;
+				}
+
+				p {
+					font-size: 2rem;
+					width: 100%;
+					max-width: 453px;
+					color: v.$texto-body;
+				}
+			}
+
+			.button-actions {
+				@include m.flex(row, center, center, 16px);
+			}
+		}
+
+		.box-notebook {
+			min-height: 433.5px;
+			width: 100%;
+			max-width: 805.75px;
+			@include m.flex(row, center, center, 8px);
+			position: absolute;
+			right: -90px;
+			top: 0;
+
+			#notebook {
+				z-index: 2;
+			}
+
+			.print-software {
+				position: absolute;
+				width: 590px;
+				top: 20.11px;
+				z-index: 3;
+			}
+
+			.elemento-vetor {
+				position: absolute;
+				left: -4px;
+				z-index: 1;
 			}
 		}
 	}
