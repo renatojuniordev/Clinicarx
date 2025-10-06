@@ -156,23 +156,18 @@
 		}
 
 		.box-notebook {
+			background: no-repeat center center;
+			background-size: contain;
 			min-height: 433.5px;
 			width: 100%;
-			max-width: 805.75px;
+			max-width: 810.75px;
 			@include m.flex(row, center, center, 8px);
 			position: absolute;
 			right: -90px;
 			top: 0;
 
-			#notebook {
+			img:nth-child(1) {
 				z-index: 2;
-			}
-
-			.print-software {
-				position: absolute;
-				width: 590px;
-				top: 20.11px;
-				z-index: 3;
 			}
 
 			.elemento-vetor {
