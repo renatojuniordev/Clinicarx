@@ -161,18 +161,21 @@
 			min-height: 433.5px;
 			width: 100%;
 			max-width: 810.75px;
-			@include m.flex(row, center, center, 8px);
+			// @include m.flex(row, center, center, 8px);
 			position: absolute;
 			right: -90px;
 			top: 0;
 
 			img:nth-child(1) {
 				z-index: 2;
+				position: relative;
 			}
 
 			.elemento-vetor {
 				position: absolute;
 				left: -4px;
+				top: 50%;
+				transform: translateY(-50%);
 				z-index: 1;
 			}
 		}
